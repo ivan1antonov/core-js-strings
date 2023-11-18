@@ -397,7 +397,7 @@ function reverseWords(str) {
  *   invertCase('12345') => '12345'
  */
 function invertCase(str) {
-  return str.replace(/\w{1}/g, function (val) {
+  return str.replace(/\w{1}/g, function invert(val) {
     return val === val.toLowerCase() ? val.toUpperCase() : val.toLowerCase();
   });
 }
